@@ -13,4 +13,4 @@ df = spark.createDataFrame(data)
 
 df.createOrReplaceTempView("people")
 
-result_df = spark.sql("select id, name, age FROM people WHERE age > 28")
+result_df = spark.sql("SELECT id, name, age FROM people WHERE age > 28")
